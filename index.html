@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container my-5">
+      <h1 class="text-center title">World Weather</h1>
+      <form class="search-loaction">
+        <input
+          type="text"
+          name="city"
+          placeholder="What city?"
+          autocomplete="off"
+          class="form-control text-muted form-rounded p-4 shadow-sm"
+        />
+      </form>
+
+      <div class="card rounded my-3 shadow-lg d-none back-card">
+        <div class="card-top text-center">
+          <div class="city-name my-3">
+            <p>Abuja</p>
+            <span>...</span>
+          </div>
+          <img src="img/night_image.svg" alt="" class="card-img-top time" />
+        </div>
+
+        <div class="card-body">
+          <div class="card-mid row">
+            <div class="col-8 text-center temp">
+              <span>30&deg;C</span>
+            </div>
+            <div class="col-4 condition-temp">
+              <p class="condition">Thunder Storm</p>
+              <p class="high">30&deg;C</p>
+              <p class="low">27&deg;C</p>
+            </div>
+          </div>
+
+          <div class="icon-container card shadow mx-auto">
+            <img src="img/cloud.svg" alt="" />
+          </div>
+          <div class="card-bottom px-5 py-4 row">
+            <div class="col text-center">
+              <p>30&deg;C</p>
+              <span>Feels Like</span>
+            </div>
+            <div class="col text-center">
+              <p>55%</p>
+              <span>Humidity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<center>Citys Weather</center>
+<br>
+<div class="grid-container shadow-lg">
+  <div class="grid-item"><a target="_blank"><img src="https://w.bookcdn.com/weather/picture/26_18036_1_1_17bc9c_250_13a085_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=2&domid=w209&anc_id=58712"  alt="booked.net"/></a>
+</div>
+  <div class="grid-item"><a target="_blank"><img src="https://w.bookcdn.com/weather/picture/26_14995_1_1_2bcc71_250_24ae60_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=2&domid=w209&anc_id=35484"  alt="booked.net"/></a>
+</div>
+  <div class="grid-item"><a target="_blank"><img src="https://w.bookcdn.com/weather/picture/26_26831_1_1_3498db_250_2980b9_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=2&domid=w209&anc_id=35484"  alt="booked.net"/></a>
+</div>  
+  <div class="grid-item"><a target="_blank"><img src="https://w.bookcdn.com/weather/picture/26_18038_1_1_3658db_250_2a48ba_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=2&domid=w209&anc_id=93217"  alt="booked.net"/></a>
+</div>
+  <div class="grid-item"><a target="_blank"><img src="https://w.bookcdn.com/weather/picture/26_18103_1_1_ecf0f1_250_bdc3c7_9da2a6_ffffff_1_2071c9_ffffff_0_6.png?scode=2&domid=w209&anc_id=93217"  alt="booked.net"/></a>
+</div>
+  <div class="grid-item"><a target="_blank"><img src="https://w.bookcdn.com/weather/picture/26_4422_1_1_f1c411_250_f39c13_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=2&domid=w209&anc_id=93217"  alt="booked.net"/></a>
+</div>  
+  <div class="grid-item"><a target="_blank"><img src="https://w.bookcdn.com/weather/picture/26_31096_1_1_e67e22_250_d35401_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=2&domid=w209&anc_id=93217"  alt="booked.net"/></a>
+</div>
+  <div class="grid-item"><a target="_blank"><img src="https://w.bookcdn.com/weather/picture/26_21_1_1_e74c3c_250_c0392b_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=2&domid=w209&anc_id=93217"  alt="booked.net"/></a>
+</div>
+  <div class="grid-item"><a target="_blank"><img src="https://w.bookcdn.com/weather/picture/26_4565_1_1_9b59b6_250_8e44ad_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=2&domid=w209&anc_id=73032"  alt="booked.net"/></a>
+</div>  
+</div>
+
+
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The grid: Three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<br><br>
+<div style="text-align:center">
+  <p>Click on the Citys below:</p>
+</div>
+
+<!-- Three columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b1');" style="background:#707070;">
+    Chennai
+  </div>
+  <div class="column" onclick="openTab('b2');" style="background:#707070;">
+    Madurai
+  </div>
+  <div class="column" onclick="openTab('b3');" style="background:#707070;">
+    Mumbai
+  </div>
+<div class="column" onclick="openTab('b4');" style="background:#707070;">
+    New Delhi
+  </div>
+<div class="column" onclick="openTab('b5');" style="background:#707070;">
+    New Delhi
+  </div>
+<div class="column" onclick="openTab('b6');" style="background:#707070;">
+    Kazan - Russia
+  </div>
+<div class="column" onclick="openTab('b7');" style="background:#707070;">
+    Tangermuende - Germany
+  </div>
+<div class="column" onclick="openTab('b8');" style="background:#707070;">
+    Singapore
+  </div>
+<div class="column" onclick="openTab('b9');" style="background:#707070;">
+    Nagoya - Japan
+  </div>
+</div>
+
+<!-- Full-width columns: (hidden by default) -->
+
+<div id="b1" class="container" style="display:none;background:#202020">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Chennai</h2>
+  <a target="_blank"><img src="https://w.bookcdn.com/weather/picture/26_18036_1_1_17bc9c_250_13a085_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=2&domid=w209&anc_id=58712"  alt="booked.net"/></a>
+</div>
+
+<div id="b2" class="container" style="display:none;background:#202020">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Madurai</h2>
+  <a target="_blank"><img src="https://w.bookcdn.com/weather/picture/26_14995_1_1_2bcc71_250_24ae60_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=2&domid=w209&anc_id=35484"  alt="booked.net"/></a>
+</div>
+
+<div id="b3" class="container" style="display:none;background:#202020">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Mumbai</h2>
+<a target="_blank"><img src="https://w.bookcdn.com/weather/picture/26_26831_1_1_3498db_250_2980b9_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=2&domid=w209&anc_id=35484"  alt="booked.net"/></a>
+</div>
+
+<div id="b4" class="container" style="display:none;background:#202020">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>New Delhi</h2>
+<a target="_blank"><img src="https://w.bookcdn.com/weather/picture/26_18038_1_1_3658db_250_2a48ba_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=2&domid=w209&anc_id=93217"  alt="booked.net"/></a>
+</div>
+<div id="b5" class="container" style="display:none;background:#202020">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>New York</h2>
+<a target="_blank"><img src="https://w.bookcdn.com/weather/picture/26_18103_1_1_ecf0f1_250_bdc3c7_9da2a6_ffffff_1_2071c9_ffffff_0_6.png?scode=2&domid=w209&anc_id=93217"  alt="booked.net"/></a>
+</div>
+<div id="b6" class="container" style="display:none;background:#202020">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Kazan - Russia</h2>
+<a target="_blank"><img src="https://w.bookcdn.com/weather/picture/26_4422_1_1_f1c411_250_f39c13_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=2&domid=w209&anc_id=93217"  alt="booked.net"/></a>
+</div>  
+
+<div id="b7" class="container" style="display:none;background:#202020">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Tangermuende - Germany</h2>
+<a target="_blank"><img src="https://w.bookcdn.com/weather/picture/26_31096_1_1_e67e22_250_d35401_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=2&domid=w209&anc_id=93217"  alt="booked.net"/></a>
+</div>
+
+<div id="b8" class="container" style="display:none;background:#202020">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Singapore</h2>
+<a target="_blank"><img src="https://w.bookcdn.com/weather/picture/26_21_1_1_e74c3c_250_c0392b_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=2&domid=w209&anc_id=93217"  alt="booked.net"/></a>
+</div>
+
+<div id="b9" class="container" style="display:none;background:#202020">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Nagoya - Japan</h2>
+<a target="_blank"><img src="https://w.bookcdn.com/weather/picture/26_4565_1_1_9b59b6_250_8e44ad_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=2&domid=w209&anc_id=73032"  alt="booked.net"/></a>
+</div>  
+
+<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+
+
+
+
+    <script src="request.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
